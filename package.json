@@ -1,0 +1,19 @@
+{
+  "name": "quasarboilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for hybrid applications using Node.js for backend, RethinkDB for database, and Quasar (Vue.js framework) for frontend/app Edit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielsclimaco/QuasarBoilerplate.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabrielsclimaco/QuasarBoilerplate/issues"
+  },
+  "homepage": "https://github.com/gabrielsclimaco/QuasarBoilerplate#readme"
+}

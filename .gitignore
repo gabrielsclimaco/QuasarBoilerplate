@@ -1,0 +1,14 @@
+node_modules
+uploads
+rethinkdb_data
+*.lock
+
+.DS_Store
+*.swp
+
+*.txt
+dist
+
+bin/*
+*.parse.json
+others/
