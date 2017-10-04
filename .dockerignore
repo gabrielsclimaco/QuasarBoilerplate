@@ -1,0 +1,4 @@
+Dockerfile
+node_modules
+frontend
+rethinkdb_data

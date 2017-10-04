@@ -1,0 +1,44 @@
+version: "3"
+
+services:
+  # frontend:
+  #   build: ./frontend
+  #   image: boilerplate-frontend:latest
+  #   links:
+  #     - backend
+  #   volumes:
+  #     # - ./frontend:/app
+  #     - ./frontend/src:/app/src
+  #     - ./frontend/build:/app/build
+  #     - ./frontend/static:/app/static
+  #     - ./frontend/test:/app/test
+  #     - ./frontend/config:/app/config
+  #     - ./frontend/package.json:/app/package.json
+  #   ports:
+  #     - "8081:8081"
+  #   environment:
+  #     - NODE_ENV=development
+  #   depends_on:
+  #     - backend
+  backend:
+    build: .
+    image: boilerplate-backend:latest
+    links:
+      - rethink
+    volumes:
+      - ./src:/app/src
+      - ./package.json:/app/package.json
+    ports:
+      - "3000:3000"
+      - "4000:4000"
+    environment:
+      - DB_HOST=rethink
+      - NODE_ENV=development
+      - WEB_HOST=http://frontend
+    depends_on:
+      - rethink
+  rethink:
+    image: rethinkdb:latest
+    ports:
+      - "28015:28015"
+      - "8080:8080"

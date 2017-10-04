@@ -10,8 +10,8 @@ const port = process.env.PORT || config.port || 3000
 
 let app = express()
 let server = require('http').Server(app)
-let io = require('socket.io')(server)
-require('./api/socket/socket')(io)
+// let io = require('socket.io')(server)
+// require('./api/socket/socket')(io)
 server.listen(4000)
 
 app.use(morgan('dev'))
