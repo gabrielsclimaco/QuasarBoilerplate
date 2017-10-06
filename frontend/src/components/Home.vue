@@ -31,9 +31,9 @@ q-layout(ref='layout', view='lhh Lpr lFf', :right-breakpoint='1100')
   // sub-routes get injected here:
   router-view
     // Footer
-    q-toolbar(slot='footer', color='secondary')
-      q-toolbar-title
-        | Boilerplate
+  q-toolbar(slot='footer', color='secondary')
+    q-toolbar-title
+      | Boilerplate
 </template>
 
 <script>
