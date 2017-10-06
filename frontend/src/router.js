@@ -20,9 +20,8 @@ export default new VueRouter({
    * If switching back to default "hash" mode, don't forget to set the
    * build publicPath back to '' so Cordova builds work again.
    */
-
   routes: [
-    { path: '/', component: load('Hello') },
+    { path: '/', component: load('Home') },
 
     // Always leave this last one
     { path: '*', component: load('Error404') } // Not found

@@ -44,7 +44,17 @@ module.exports = {
     // Proxy your API if using any.
     // Also see /build/script.dev.js and search for "proxy api requests"
     // https://github.com/chimurai/http-proxy-middleware
-    proxyTable: {}
+    proxyTable: {
+      // uncomment this to run without docker
+      // '/api': 'http://localhost:3000',
+      // '/uploads': 'http://localhost:3000',
+      // '/socket': 'http://localhost:4000'
+      // -------------------------------------
+      // comment this to run without docker
+      '/api': 'http://backend:3000',
+      '/uploads': 'http://backend:3000',
+      '/socket': 'http://backend:4000'
+    }
   }
 }
 
