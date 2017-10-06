@@ -6,10 +6,6 @@ q-layout(ref='layout', view='lhh Lpr lFf', :right-breakpoint='1100')
       q-icon(name='menu')
     q-toolbar-title
       | {{$route.name || "Home"}}
-    //
-      <q-btn flat @click="$refs.layout.toggleRight()">
-      <q-icon name="menu" />
-      </q-btn>
   // Left Side Panel
   div(slot='left')
     q-list(no-border='', link='', inset-separator='')
